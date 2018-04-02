@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		98136DB8206D0B24002F5DB0 /* SXUIMethodsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98136DB7206D0B24002F5DB0 /* SXUIMethodsHelper.swift */; };
 		983FBA09206C79BA00618231 /* SwiftyXUIKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 983FBA07206C79BA00618231 /* SwiftyXUIKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		98136DB7206D0B24002F5DB0 /* SXUIMethodsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SXUIMethodsHelper.swift; sourceTree = "<group>"; };
 		983FBA04206C79BA00618231 /* SwiftyXUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyXUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		983FBA07206C79BA00618231 /* SwiftyXUIKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftyXUIKit.h; sourceTree = "<group>"; };
 		983FBA08206C79BA00618231 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -27,6 +29,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		98136DB6206D0AEE002F5DB0 /* SXUIHelper */ = {
+			isa = PBXGroup;
+			children = (
+				98136DB7206D0B24002F5DB0 /* SXUIMethodsHelper.swift */,
+			);
+			name = SXUIHelper;
+			sourceTree = "<group>";
+		};
 		983FB9FA206C79BA00618231 = {
 			isa = PBXGroup;
 			children = (
@@ -46,6 +56,7 @@
 		983FBA06206C79BA00618231 /* SwiftyXUIKit */ = {
 			isa = PBXGroup;
 			children = (
+				98136DB6206D0AEE002F5DB0 /* SXUIHelper */,
 				983FBA07206C79BA00618231 /* SwiftyXUIKit.h */,
 				983FBA08206C79BA00618231 /* Info.plist */,
 			);
@@ -95,6 +106,7 @@
 				TargetAttributes = {
 					983FBA03206C79BA00618231 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				98136DB8206D0B24002F5DB0 /* SXUIMethodsHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +265,7 @@
 		983FBA0D206C79BA00618231 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -263,13 +277,13 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = SwiftyXUIKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				/* IPHONEOS_DEPLOYMENT_TARGET = ; */
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = com.HyperartFlow.SwiftyXUIKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -277,6 +291,7 @@
 		983FBA0E206C79BA00618231 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -288,7 +303,6 @@
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = SwiftyXUIKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				/* IPHONEOS_DEPLOYMENT_TARGET = ; */
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				ONLY_ACTIVE_ARCH = YES;
