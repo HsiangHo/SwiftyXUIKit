@@ -9,6 +9,10 @@
 import Foundation
 
 public class SXUIVersion{
+    /// Get macOS version string.
+    ///
+    /// :param: void
+    /// :returns: String  Such as: 10.13.3
     public static func macOSVersionString() -> String {
         var verString: String;
         if #available(OSX 10.10, *) {
