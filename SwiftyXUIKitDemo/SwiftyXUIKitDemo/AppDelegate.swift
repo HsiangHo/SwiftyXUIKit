@@ -7,6 +7,7 @@
 //
 
 import Cocoa
+import SwiftyXUIKit
 
 @NSApplicationMain
 class AppDelegate: NSObject, NSApplicationDelegate {
