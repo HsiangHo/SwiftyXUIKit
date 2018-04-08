@@ -10,7 +10,22 @@
 		983FBA1C206C819900618231 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 983FBA1B206C819900618231 /* AppDelegate.swift */; };
 		983FBA1E206C819900618231 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 983FBA1D206C819900618231 /* Assets.xcassets */; };
 		983FBA21206C819900618231 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 983FBA1F206C819900618231 /* MainMenu.xib */; };
+		987AE1D9207A213C0075060E /* SwiftyXUIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 987AE1D8207A213C0075060E /* SwiftyXUIKit.framework */; };
+		987AE1DA207A21410075060E /* SwiftyXUIKit.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 987AE1D8207A213C0075060E /* SwiftyXUIKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		987AE1D1207A20A70075060E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				987AE1DA207A21410075060E /* SwiftyXUIKit.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		983FBA18206C819900618231 /* SwiftyXUIKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyXUIKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -19,6 +34,7 @@
 		983FBA20206C819900618231 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		983FBA22206C819900618231 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		983FBA23206C819900618231 /* SwiftyXUIKitDemo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SwiftyXUIKitDemo.entitlements; sourceTree = "<group>"; };
+		987AE1D8207A213C0075060E /* SwiftyXUIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyXUIKit.framework; path = ../Build/Products/Output/SwiftyXUIKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				987AE1D9207A213C0075060E /* SwiftyXUIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +54,7 @@
 			children = (
 				983FBA1A206C819900618231 /* SwiftyXUIKitDemo */,
 				983FBA19206C819900618231 /* Products */,
+				98804F8A2077C7B10055444D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,6 +78,14 @@
 			path = SwiftyXUIKitDemo;
 			sourceTree = "<group>";
 		};
+		98804F8A2077C7B10055444D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				987AE1D8207A213C0075060E /* SwiftyXUIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -70,6 +96,7 @@
 				983FBA14206C819900618231 /* Sources */,
 				983FBA15206C819900618231 /* Frameworks */,
 				983FBA16206C819900618231 /* Resources */,
+				987AE1D1207A20A70075060E /* CopyFiles */,
 			);
 			buildRules = (
 			);
