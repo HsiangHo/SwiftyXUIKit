@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		98136DB8206D0B24002F5DB0 /* SXUIMethodsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98136DB7206D0B24002F5DB0 /* SXUIMethodsHelper.swift */; };
 		987AE1DC207A25120075060E /* SXUIVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987AE1DB207A25120075060E /* SXUIVersion.swift */; };
+		98DAB620207A3E99004692FA /* SXUIParasiteObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98DAB61F207A3E99004692FA /* SXUIParasiteObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -16,6 +17,7 @@
 		983FBA04206C79BA00618231 /* SwiftyXUIKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyXUIKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		983FBA08206C79BA00618231 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		987AE1DB207A25120075060E /* SXUIVersion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SXUIVersion.swift; sourceTree = "<group>"; };
+		98DAB61F207A3E99004692FA /* SXUIParasiteObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SXUIParasiteObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +36,7 @@
 			children = (
 				98136DB7206D0B24002F5DB0 /* SXUIMethodsHelper.swift */,
 				987AE1DB207A25120075060E /* SXUIVersion.swift */,
+				98DAB61F207A3E99004692FA /* SXUIParasiteObject.swift */,
 			);
 			name = SXUIHelper;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				98136DB8206D0B24002F5DB0 /* SXUIMethodsHelper.swift in Sources */,
+				98DAB620207A3E99004692FA /* SXUIParasiteObject.swift in Sources */,
 				987AE1DC207A25120075060E /* SXUIVersion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
