@@ -10,7 +10,7 @@ import Foundation
 
 private var kProperty = "parasiteKey";
 
-class SXUIParasiteObject{
+fileprivate class SXUIParasiteObject{
     private var _doct:[String : Any];
     
     init() {
@@ -26,15 +26,15 @@ class SXUIParasiteObject{
     }
 }
 
-func set_parasiteObj(parasitifer: Any, obj:SXUIParasiteObject) -> Void {
+fileprivate func set_parasiteObj(parasitifer: Any, obj:SXUIParasiteObject) -> Void {
     objc_setAssociatedObject(parasitifer, &kProperty, obj, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
 }
 
-func get_parasiteObj(parasitifer: Any) -> SXUIParasiteObject? {
+fileprivate func get_parasiteObj(parasitifer: Any) -> SXUIParasiteObject? {
     return objc_getAssociatedObject(parasitifer, &kProperty) as? SXUIParasiteObject
 }
 
-func set_property(parasitifer: Any, value: Any?, key:String) -> Void {
+fileprivate func set_property(parasitifer: Any, value: Any?, key:String) -> Void {
     var obj: SXUIParasiteObject? = get_parasiteObj(parasitifer: parasitifer)
     if nil == obj {
         obj = SXUIParasiteObject.init()
@@ -43,7 +43,7 @@ func set_property(parasitifer: Any, value: Any?, key:String) -> Void {
     obj!.setProperty(obj: value, key: key)
 }
 
-func get_property(parasitifer: Any, key: String) -> Any? {
+fileprivate func get_property(parasitifer: Any, key: String) -> Any? {
     var rtn:Any? = nil;
     let obj:SXUIParasiteObject? = get_parasiteObj(parasitifer: parasitifer)
     if nil != obj {
@@ -58,7 +58,7 @@ func get_property(parasitifer: Any, key: String) -> Any? {
 ///             2.value             (Extended property value)
 ///             3.key               (Extended property key)
 ///:returns: Void
-public func SXUI_SET_PROPERTY(parasitifer: Any, value: Any?, key:String) -> Void {
+func SXUI_SET_PROPERTY(parasitifer: Any, value: Any?, key:String) -> Void {
     set_property(parasitifer: parasitifer, value: value, key: key)
 }
 
@@ -68,6 +68,6 @@ public func SXUI_SET_PROPERTY(parasitifer: Any, value: Any?, key:String) -> Void
 ///:params:     1.parasitifer       (Extended object. Swift Do Not support macro, so this param is necessary.)
 ///             2.key               (Extended property key)
 ///:returns: Any?                   (Extended property value)
-public func SXUI_GET_PROPERTY(parasitifer: Any, key: String) -> Any? {
+func SXUI_GET_PROPERTY(parasitifer: Any, key: String) -> Any? {
     return get_property(parasitifer: parasitifer, key: key)
 }
