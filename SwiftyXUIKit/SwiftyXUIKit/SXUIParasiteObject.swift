@@ -8,7 +8,7 @@
 
 import Foundation
 
-let kProperty = "parasiteKey";
+private var kProperty = "parasiteKey";
 
 class SXUIParasiteObject{
     private var _doct:[String : Any];
@@ -27,11 +27,11 @@ class SXUIParasiteObject{
 }
 
 func set_parasiteObj(parasitifer: Any, obj:SXUIParasiteObject) -> Void {
-    objc_setAssociatedObject(parasitifer, kProperty, obj, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+    objc_setAssociatedObject(parasitifer, &kProperty, obj, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
 }
 
 func get_parasiteObj(parasitifer: Any) -> SXUIParasiteObject? {
-    return objc_getAssociatedObject(parasitifer, kProperty) as? SXUIParasiteObject
+    return objc_getAssociatedObject(parasitifer, &kProperty) as? SXUIParasiteObject
 }
 
 func set_property(parasitifer: Any, value: Any?, key:String) -> Void {
